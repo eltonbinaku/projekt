@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 10px;
+  margin-left: 300px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.more {
+  display: none;
+}
+.firsttxt{
+	margin-left:350px;
+	margin-right:350px;
+}
+
+.lessmore{
+margin-left:1800px;
+
+}
+
+.title{
+ color: #7184BF;
+ margin-top: 140px;
+ margin-left: 440px;
+ font-size: xxx-large
+ 
+}
+
+.title2{
+ color: #7184BF;
+ margin-left: 340px;
+ font-size: xxx-large
+}
+.title3{
+ color: #7184BF;
+ margin-left: 340px;
+ font-size: xx-large
+}
+
+.centered {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+   margin-top:-10px;
+  left: 0;
+  margin-left:-6.9px;
+  
+}
+.image4 {
+  position: absolute;
+  margin-top:-750px;
+  left: 0;
+  margin-left:-18.3px;
+}
+.image2 {
+  position: absolute;
+  top: 90%;
+  left: 49.3%; 
+  
+}
+.image3 {
+  position: absolute;
+  top: 90.8%;
+  left: 49.99%; 
+}
+
+.image5 {
+  position: absolute;
+  top: 91.8%;
+  left: 24.40%; 
+
+}
+.image6 {
+  position: absolute;
+  top: 91.8%;
+  left: 67.99%; 
+
+}
+
+.image7 {
+  position: absolute;
+  top: 8.8%;
+  left: 4.99%; 
+  
+}
+.image8 {
+  position: absolute;
+  top: 8.8%;
+  left: 52.99%; 
+  
+}
+
+}
+.activites{
+	margin-right:600px;
+	margin-left:600px;
+	margin-top:-80px;
+	font-weight: 100;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: #7184BF;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left:600px;
+  margin-right:600px;
+}
+.butoni{
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+  padding: 7px 13px;
+  font-size: 16px;
+  cursor: pointer;
+  color: red;
+  
+}
+.success {
+  border-color: red;
+  color: red;
+}
+
+.success:hover {
+  background-color: red;
+  color: white;
+}
+.previous {
+  background-color: #f1f1f1;
+ 
+}
+.round {
+  border-radius: 50%;
+}
+.parent .href {
+  position: absolute;
+  top: 6%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+.parent .href:hover {
+  color: yellow;
+}
+</style>
+</head>
+
+<div class="parent">
+  <img class="image1" src="background2021.png" />
+  <img class="image2" src="maus.png" />
+  <img class="image3" src="scrolling.png" />
+  <img class="image4" src="background2.png" />
+  <img class="image5" src="flower.png" />
+  <img class="image6" src="flower2.png" />
+  <img class="image7" src="line.png" />
+  <img class="image8" src="yellow.png" />
+  <a class="href" href="historiku.html" style="margin-right:200px;">Le Concept</a>
+  <a class="href" href="index.html" style="margin-left:150px;">Éditions précédentes</a>
+</div>
+
+	<div class="container">
+		<div class="centered"> Scroll down</div>
+	</div>
+<body>
+
+	<a href="index.html" style="text-decoration:none; opacity:0.5; color:black;"><h1 class="title">2020</h1></a><a href="index2021.html" style="text-decoration:none"><h1 class="title" style="margin-left:700px; margin-top:-90px;">2021</h1></a>
+		<img style="margin-left:430px; position: absolute;" src="line2.png" />
+		<img style="margin-left:730px; margin-top:-3px; position: absolute;" src="purple.png" />
+<br>
+<br>
+	
+	<a href="index2021.html" style="text-decoration:none; color:black; opacity:0.5;"><h2 style="font-weight: 100; margin-left:430px; margin-top:53px;">Carouge</h2>
+
+	<h2 style="font-weight: 100; margin-left:430px; margin-top:-10px;">10 - 16 Août</h2></a>
+	
+<br>
+<br>
+	<a href="lancy2021.html" style="text-decoration:none; color:black; opacity: 0.5;"><h2 style="font-weight: 100; margin-left:430px; margin-top:53px; ">Lancy</h2>
+
+	<h2 style="font-weight: 100; margin-left:430px; color:black; margin-top:-10px;opacity: 0.5; ">17 - 23 Août</h2></a>
+	
+<br>
+<br>
+	<a href="meyrin.html" style="text-decoration:none; color:black; opacity: 0.5;">	<h2 style="font-weight: 100; margin-left:430px; margin-top:53px; ">Meyrin</h2>
+
+	<h2 style="font-weight: 100; margin-left:430px; margin-top:-10px; opacity: 0.5; ">25 - 29 Août</h2></a>
+
+<br>
+<br>
+		<a href="vernier.html" style="text-decoration:none; color:black;"><h2 style="font-weight: 100; margin-left:430px; margin-top:53px; ">Vernier</h2>
+
+	<h2 style="font-weight: 100; margin-left:430px; margin-top:-10px;">18 - 22 Août</h2></a>
+			<img style="margin-left:430px; margin-top:-3px; position: absolute;" src="purple.png" />
+		<div>
+				<img style="margin-left:590px; position: absolute; margin-top:-300px;" src="vernier.png" />
+				<img style="margin-left:929px; margin-top:379px; position: absolute;" src="decoration.png" />
+				<img style="margin-left:1520px; margin-top:-320px; position: absolute;" src="decoration2.png" />
+				<img style="margin-left:1490px; margin-top:-300px; position: absolute;" src="plant.png" />
+				<img style="margin-left:1460px; margin-top:-266px; position: absolute;" src="plant2.png" />
+		</div>
+
+				<h1 class="title" style="margin-top:800px; margin-left:850px;">Galerie</h1>
+		<img style="margin-left:550px; margin-top:-200px; position: absolute;" src="book.png" />
+				
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">2 / 20</div>
+					<img src="image.png" style="width:100%">
+		
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 20</div>
+					<img src="image.png" style="width:100%">
+			
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+					<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 20</div>
+					<img src="image.png" style="width:100%">
+			
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">6 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">7 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">8 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+			
+					<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">9 / 20</div>
+					<img src="image.png" style="width:100%">
+			
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">10 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">11 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">12 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+					<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">13 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">14 / 20</div>
+					<img src="image.png" style="width:100%">
+				 
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">15 / 20</div>
+					<img src="image.png" style="width:100%">
+			
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">16 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">17 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">18 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+					<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">19 / 20</div>
+					<img src="image.png" style="width:100%">
+				
+			</div>
+
+			<div class="mySlides fade">
+				  <div class="numbertext">20 / 20</div>
+					<img src="image.png" style="width:100%">
+			</div>
+
+
+			
+			<a class="prev" style="margin-top:20px;" onclick="plusSlides(-1)">❮</a>
+			<a class="next" style="margin-top:20px;" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span> 
+  <span class="dot" onclick="currentSlide(14)"></span> 
+  <span class="dot" onclick="currentSlide(15)"></span> 
+  <span class="dot" onclick="currentSlide(16)"></span> 
+  <span class="dot" onclick="currentSlide(17)"></span> 
+  <span class="dot" onclick="currentSlide(18)"></span> 
+  <span class="dot" onclick="currentSlide(19)"></span> 
+  <span class="dot" onclick="currentSlide(20)"></span> 
+</div>
+
+				
+				
+
+ <img  src="footer2.png" style="margin-left:-47.6vh;margin-top:100px; margin-bottom:-60px;" />
+
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

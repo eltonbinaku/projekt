@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+body{
+ margin-left:40vh
+ margin-right:40vh
+  -webkit-box-ordinal-group: 2; 
+  -moz-box-ordinal-group: 2; 
+  -ms-flex-order: 2; 
+  -webkit-order: 2; 
+}
+
+
+.button2 {
+  background-color: #f5f5f5; 
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  border-radius: 50%;
+}
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3:click {
+  transform: rotate(45deg)
+}
+.hidden{
+display : none;
+}
+
+.more {
+  display: none;
+}
+.firsttxt{
+	margin-left:350px;
+	margin-right:350px;
+
+}
+
+.lessmore{
+margin-left:1800px;
+
+}
+
+.title{
+ color: #7184BF;
+ margin-left: 80vh;
+ font-size:3vw
+}
+
+.title2{
+ color: #7184BF;
+ margin-left:40vh ;
+ margin-right:40vh;
+ font-size:3vw
+}
+.title3{
+ color: #7184BF;
+ font-size: xx-large;
+ margin-left:40vh; 
+ margin-right:40vh;
+}
+
+.centered {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  margin-top:-10px;
+  left: 0;
+  margin-left:-28px;
+  
+}
+.image4 {
+  position: absolute;
+  margin-top:-762px;
+  left: 0;
+  margin-left:-28px;
+}
+.image2 {
+  position: absolute;
+  top: 90%;
+  left: 49.3%; 
+  
+}
+.image3 {
+  position: absolute;
+  top: 90.8%;
+  left: 49.99%; 
+}
+
+.image5 {
+  position: absolute;
+  top: 91.8%;
+  left: 24.40%; 
+
+}
+.image6 {
+  position: absolute;
+  top: 91.8%;
+  left: 67.99%; 
+
+}
+
+.image7 {
+  position: absolute;
+  top: 8.8%;
+  left: 4.99%; 
+  
+}
+.image8 {
+  position: absolute;
+  top: 8.8%;
+  left: 46.60%; 
+  
+}
+
+}
+.activites{
+	margin-right:600px;
+	margin-left:600px;
+	margin-top:-80px;
+	font-weight: 100;
+}
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: #7184BF;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left:600px;
+  margin-right:600px;
+}
+.butoni{
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+  padding: 7px 13px;
+  font-size: 16px;
+  cursor: pointer;
+  color: red;
+  
+}
+.success {
+  border-color: red;
+  color: red;
+}
+
+.success:hover {
+  background-color: red;
+  color: white;
+}
+.previous {
+  background-color: #f1f1f1;
+ 
+}
+.round {
+  border-radius: 50%;
+}
+.parent .href {
+  position: absolute;
+  top: 6%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+.parent .href:hover {
+  color: yellow;
+}
+p{
+	font-size:1.3vw;
+}
+li{
+	font-size:1.3vw;
+}
+h2{
+	font-size:1.3vw;
+}
+h3{
+	font-size:1.3vw;
+}
+</style>
+</head>
+
+
+
+
+<div class="parent">
+  <img class="image1" src="historiku.png" />
+  <img class="image2" src="maus.png" />
+  <img class="image3" src="scrolling.png" />
+  <img class="image4" src="background.png" />
+  <img class="image5" src="flower.png" />
+  <img class="image6" src="flower2.png" />
+  <img class="image7" src="line.png" />
+  <img class="image8" src="yellow.png" />
+  <a class="href" href="historiku.html" style="margin-right:200px;">Le Concept</a>
+  <a class="href" href="index.html" style="margin-left:130px;">Éditions précédentes</a>
+</div>
+
+	<div class="container">
+		<div class="centered"> Scroll down</div>
+	</div>
+<body>
+
+<h1 class="title">Historique</h1>
+	<button class="button2 button3" onclick="myFunction()" id="myBtn" style="margin-left:160vh; font-size:0.7vw; ">↑</button>
+<p><span id="dots"><h3 class="firsttxt">
+
+
+</h3></span></p><span id="more"> <h2 style="font-weight:100; margin-left:40vh ;margin-right:40vh"><p>En 2020</p></h2><h2 style="font-weight:100; margin-left:40vh ;margin-right:40vh"><p>La première édition des Chapiteaux enchantés a eu lieu durant l'été 2020 Ce projet a été proposé les deux dernières semaines précédant la rentrée scolaire suite au confinement sanitaire et à la fermeture des crèches, des terrains de jeux et de tous les lieux d'accueil pour les familles avec enfants el âge préscolaire. Au printemps 2020, la vie en communauté s'est ainsi limitée, pour les enfants et les adultes qui les gardent, à la famille jeune et proche. S'appuyant sur le postulat que, cet été 2020, particulièrement, les familles seraient demandeuses d'animations organisées et d'activités extérieures respectant les règles sanitaires en vigueur, le bureau de l'intégration des étrangers a imaginé ce nouveau projet et l'a déployé en partenariat avec les Ville de Carouge et de Lancy</p>
+<br> <br><p>Au printemps 2020, la vie en communauté s'est ainsi limitée, pour les enfants et les adultes qui les gardent, à la famille jeune et proche. S'appuyant sur le postulat que, cet été 2020, particulièrement, les familles seraient demandeuses d'animations organisées et d'activités extérieures respectant les règles sanitaires en vigueur, le bureau de l'intégration des étrangers a imaginé ce nouveau projet et l'a déployé en partenariat avec les Ville de Carouge et de Lancy </h2></p>
+
+
+<p class="title2"style="margin-left:40vh ;margin-right:40vh">Activités <br> proposées</p>
+<ul class="activites" >
+	<h2>
+		<p style="margin-top:-160px; font-weight:100; margin-left:65vh; margin-right:40vh; font-size:1.3vw; ">Les enfants ont pu</p>
+	</h2>
+<br>
+<br>
+	<h2 style="font-weight: 100; margin-left:65vh; margin-right:40vh;">
+		<li>Écouter des berceuses,</li>
+		<li>Découvrir des sons avec un ethno-musicien,</li>
+		<li>S'initier à l'éveil musical,</li>
+		<li>Écouter une conteuse sur scène et interagir,</li>
+		<li>Écouter et interagir autour d'un kamishibaï,</li>
+		<li>S'initier à la fabrication de marionnettes et préparer un petit spectacle pour leurs parents,</li>
+		<li>Participer à des explorations en psychomotricité,explorer de nouvelles matières et de nouveaux jeux avec des éducatrices de l'enfance,</li>
+		<li> Écouter des histoires lues en français et en d'autres langues et se faire masser avec leurs parents pour un moment détente,</li>
+		<li>Colorier l'affiche des Chapiteaux enchantés. Une buvette gratuite a complété I offre</li>
+		<br>
+		<p>Une buvette gratuite a complété l'offre</p>
+	</h2>
+</ul>
+
+<p class="title2"> Constats </p>
+
+<ul class="activites">
+
+<br>
+<br>
+	<h2 style="font-weight: 100; margin-left:65vh; margin-right:40vh;">
+		<li>Les postulats de départ du bie en termes de fréquentation du public se sont avérés et ont même dépassé les pronostics émis    (fréquentation jusqu'à 300 familles).</li>
+		<li>L'atmosphère sereine dégagée par ce festival a été relevée par toutes et tous.</li>
+		<li>Les visages des enfants ont reflété leur émerveillement, leur plaisir et leur concentration.</li>
+		<li>Lorsque les prestations sont de qualité, elles fascinent et émeuvent également les adultes.</li>
+		<li>Les enfants plus âgés ont pu être inclus sans souci et eux aussi ont participé avec plaisir, calme et intérêt aux activités proposées.</li>
+		<li>Les retours des parents ont été unanimement positifs.</li>
+		<li>Les élus et les professionnels visiteurs ont tous exprimé leur enthousiasme.</li>
+		<li>Les prestataires se réjouissent de l'édition prochaine.</li>
+	</h2>
+</ul>
+</span>
+
+ <button  class="button2 button3" class="hidefirst" id="button" onclick="showhide()" style="margin-left:160vh; font-size:0.7vw;  margin-top:100;">↑</button>
+<div id="newpost"  class=".hidden">
+	
+	<h1 style="color:yellow; margin-left:300px;margin-right:40vh; font-size: xxx-large; margin-top:100px;">1.<h1> <h1 class="title" style="margin-top:-90px;">Objectifs</h1>
+<div style=" margin-top:100px; margin-left:40vh ;margin-right:40vh">
+<h2 style="font-weight: 100;">
+			
+<p >Festival petite enfance pour familles, cet evenement entierement gratuit se déroule sous chapiteaux sur des espaces verts communaux</p>
+<br>
+<p>
+Durant plusieurs matinées, des activités de découvertes langagieres ludiques créatives et culturelles sont proposées aux enfants et à leurs accompagnants.
+</p>
+<br>
+<br><p>
+Un accueil individualise permet aux familles d'obtenir des informations concernant les prestations proposées et de se renseigner sur ce qui est disponible sur le territoire communal et cantonal reste de l'année.
+	</p>
+	</h2>
+</div>
+<br>
+<br>
+
+	<p class="title2"> Objectifs<br>sociaux </p>
+	
+<div style="margin-left: 750px; margin-top:-150px; margin-right: 40vh; ">
+<h2 style="font-weight: 100; ">
+<p>Lorsqu'un couple ou un individu accède à la parentalité, son changement de statut est une cause de vulnérabilité. Il s'agit là d'un des plus grands changements dans un cycle de vie.</p>
+<br>
+ <p>Les interrogations, les besoins en co-éducation et en socialisation liés à ce nouveau statut ne trouvent souvent pas de réponses satisfaisantes dans notre société multiculturelle, notamment en termes de prestations et d'activités familiales ciblant le jeune enfant dans ses explorations.</p>
+<br>
+<br>
+<br>
+<p > L'un des postulats de ce projet est que cette population de nouveaux parents fréquente activement les activités de proximité lorsqu'elles sont disponibles et de qualité.</p>
+</h2>
+</div> 
+
+	<p class="title2"> Objectifs<br>de cohèsion<br>sociale par<br>la culture </p>
+
+	
+<div style="margin-left: 750px; margin-top:-150px; margin-right: 40vh; ">
+<h2 style="font-weight: 100;">
+<p>
+Cette démarche s'inscrit dans un objectif global d'accès à la culture dont une définition concernant le jeune enfant pourrait être le fait de lui procurer des expériences sensorielles et des occasions de se confronter de façon ludique et créative à son environnement afin de l'inciter à découvrir son » monde et à se développer.</p>
+</p>
+<br>
+<p>
+ Les activités proposées permettent à chaque enfant de s'ancrer dans son environnement culturel proche et de l'explorer par les diverses approches à disposition. 
+</p>
+</h2>
+</div> 
+<br>
+<br>
+		<p class="title2"> Objectifs<br>pédagogiques</p>
+	
+<div style="margin-left: 750px; margin-top:-150px; margin-right: 40vh; ">
+<h2 style="font-weight: 100;">
+<p>
+[(...) L'enjeu est d'offrir à tous les enfants des chances égales de réussite dans la vie. Les personnes qui ont confiance dans leurs propres capacités créatrices et savent en faire usage ont appris à être autonomes et innovantes, à faire preuve de sens critique et à prendre en main leur propre existence.]</p>
+</p>
+<h3 style="color:#7184BF;" style="font-weight: 100;">
+<p>
+ Heinz Atoarfer, commission sisse pour l'UNESCO introduction à la brochure Eveil esthetique et participation culturelle accueil extralarmilial 2020
+</p>
+</h3>
+<br>
+<h2 style="font-weight: 100;">
+<p>
+Les activités choisies proposent aux enfants une grande diversité de stimulations et leur offre ainsi qu'à leur parents un large panel de champs à explorer dans les domaines langagier, musical, créatif, du mouvement et ludique. 
+</p>
+</div>
+</div>
+
+</h2>
+</h2>
+</div> 
+<div>
+	<button class="button2 button3" onclick="myF()" style="margin-left:160vh; font-size:0.7vw;  margin-top:30px;">↑</button>
+<div id="myDIV">
+
+	<h1 style="color:yellow; margin-left:40vh; font-size: xxx-large; margin-top:100px;">2.<h1> <h1 class="title" style="margin-top:-90px; margin-left:50vh;">Pour aller plus loin</h1>
+
+</div>
+	
+	<button class="button2 button3" onclick="myFu()" style="margin-left:160vh; font-size:0.7vw;  margin-top:30px;">↑</button>
+<div id="myDIV2" >
+
+<h1 style="color:yellow; margin-left:40vh; font-size: xxx-large; margin-top:70px;">A.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:500px;">La culture <br>en héritage</h1>
+	<div style="margin-left:40vh; margin-top:100px; margin-right: 40vh; ">
+		<h2 style="font-weight: 100;">
+		[L'art est-il synonyme de culture? Donner de la culture une définition exhaustive est pratiquement impossible. Il semble plus aisé de dire ce que la culture n'est pas. Mais si, dans le premier cas, la liste est infiniment longue, dans le second, elle est vide, ce qui ne nous avance pas beaucoup. Selon une définition classique, la culture englobe tout ce que crée l'être humain, par opposition à ce qui provient de la nature....
+		</h2>
+		
+<br>
+		
+		<h2 style="font-weight: 100;">
+		 En tant que produit d'un processus esthétique et créatif opéré par l'être humain, l'art est intimement lié à la notion de culture, raison pour laquelle, lorsque l'on parle de celle-ci, on fait toujours également référence aux diverses disciplines artistiques. Elles ne se limitent pas à ce que l'on appelle les beaux-arts», c'est-à-dire les arts plastiques (peinture, dessin, sculpture), les arts de la scène (théâtre, danse médias et art conceptuel), la musique et la littérature, mais comprennent également les arts appliqués tels que l'architecture (et l'architecture intérieure), le design (design de mode, graphisme, design industriel, jeux), ainsi que les innombrables formes dérivées ou mixtes, les pratiques artisanales traditionnelles et le patrimoine vivant.
+		</h2>
+<br>
+<br>
+	
+	
+	<h2 style="font-weight: 100;">
+		Mais la nature n'en joue pas moins depuis des temps immémoriaux un rôle central dans le rapport esthétique et artistique que l'être humain cultive avec le monde. Ce rapport s'exprime non seulement à travers les beaux-arts de toutes les époques, mais également à travers des formes relevant davantage des arts appliqués.]
+		<h3 style="color:#7184BF;">Brochure Eveil esthétique et participation culturelle dès le plus jeune âge; réseau suisse extra familial; 2020; p.26</h3>
+	</h2>
+</div>
+<br>
+<br>
+	<h2 style="color:#7184BF; margin-left:40vh; margin-right:40vh;">Qu’entend-on par participation culturelle ?</h2>
+	<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+[Selon le Cadre de l’UNESCO pour les statistiques culturelles 34, la participation culturelle intègre des « pratiques culturelles, qui peuvent être liées aussi bien à la consommation qu’à des activités pratiquées au sein d’une communauté et reflétant une qualité de vie, des traditions et des convictions. Sont visées la participation à des événements formels et payants (aller au cinéma ou assister à un concert, par exemple) ainsi que l’action culturelle informelle (assister à des activités culturelles communautaires et à des spectacles d’amateurs ou se livrer à des activités courantes comme lire un livre, par exemple).
+[…] Par ailleurs, la participation culturelle renvoie à des comportements actifs et passifs. Elle inclut tant le spectateur écoutant un concert que le musicien jouant sur scène » (CSC 2009, p. 45). 
+Le Message sur la culture 2016–2020 du Conseil fédéral « comprend la participation culturelle dans son acception large, comme un continuum englobant la réception par le public, la participation interactive et la pratique artistique active. Le renforcement de la participation culturelle vise d’une part la population en tant que public culturel, et met d’autre part tout particulièrement l’accent sur l’implication de la population dans une pratique culturelle librement choisie » (Position du groupe de travail « Participation culturelle » du Dialogue national sur la culture, 2016, p. 2). 
+Selon l’Office fédéral de la culture, la participation culturelle est une notion désormais utilisée en Suisse à tous les échelons de la Confédération par les instances publiques et privées œuvrant à la promotion de la culture. Ces définitions de la participation culturelle s’accordent avec le postulat fondamental de l’éveil esthétique, selon lequel l’expérience esthétique en contexte culturel comprend un versant réceptif et un versant actif : dans le premier cas, le sujet est « passif », il « participe », ou, dans l’esprit de la médiation culturelle, « interagit » ; dans le second, il « produit » activement quelque chose de sa propre initiative. 
+Les descriptions ci-dessus font également écho à l’article 31 de la Convention de l’ONU relative aux droits de l’enfant, qui reconnaît à l’enfant le droit au repos, au loisir et au jeu. Elle oblige les États parties, dont la Suisse, à veiller au respect du droit de l’enfant de « participer pleinement à la vie culturelle et artistique et à encourager l’organisation à son intention de moyens appropriés de loisirs et d’activités récréatives, artistiques et culturelles ».]
+	</h2>
+	<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh;">
+	Brochure « Eveil esthétique et participation culturelle dès le plus jeune âge ; réseau suisse extra-familial ; 2020 ; p.27
+	</h3>
+</div>
+<br>
+	<button class="button2 button3" onclick="myFun()" style="margin-left:160vh; font-size:0.7vw;  margin-top:30px;">↑</button>
+<div id="myDIV3">
+<div>
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:100px;">B.<h1> <h1 class="title" style="margin-top:-90px; margin-left:450px;">Le lien parents-enfants et<br>l’attention partagée</h1>
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:70px;">I.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:450px;">Liens<br>parents<br>-enfants</h1>
+		<h2 style="margin-left:756px; margin-right:40vh; margin-top:-180px;font-weight: 100;">[Les recherches ont donc montré que les apprentissages pendant les 1000 premiers jours vont bien au-delà de ce que l’on pensait possible il y a 30 ans. Bien que peu visibles par les parents du fait que le bébé ne peut pas encore montrer ses désirs et sa volonté, ces apprentissages sont multiples et complexes. Cette curiosité pour le monde, typique des petits humains, doit être soutenue par les échanges avec les parents et les autres adultes.]</h2>
+		<h3 style="color:#7184BF; margin-left:756px;margin-right:40vh">Rapport de la commission des 1000 premiers jours; Ministère des solidarités et de la santé ; septembre 2020 ; p. 20</h3>
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:70px;">II.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:450px;">Attention<br>partagée</h1>
+		<h2 style="margin-left:756px; margin-right:40vh; margin-top:-130px;font-weight: 100;">[Pour la construction de sa vie (vie de l’enfant) et pour trouver une « place » dans le monde qu’il va rencontrer, la capacité de comprendre et de construire des histoires joue un rôle central.]</h2>
+		<h3 style="color:#7184BF; margin-left:756px; margin-right:40vh;" >Jerome Bruner ; 1996 ; p. 53, traduit de l’anglais </h3>
+<br>
+		<h2 style="margin-left:756px; margin-right:40vh; margin-top:10px;font-weight: 100;">[Le jeu favorise la construction d’histoires sur des mondes possibles. Se développer et apprendre c’est croire en un monde qui promet l’autonomie, la réussite et la responsabilité, en une société qui est en mesure d’accepter et d’intégrer les différences. Pour ce faire, l’attention de l’adulte portée sur l’enfant est primordiale. Dès sa naissance, celui-ci entre en communication, puis en grandissant il se pose des questions, interroge. Ces demandes cachent le besoin de comprendre, d’explorer, de saisir ce qu’il ne connaît pas encore. La disponibilité d’accompagnement de l’enfant par l’adulte dans ses efforts cognitifs est le signe d’une posture positive face aux changements de la vie. La présence, les gestes, l’attention conjointe, les corrections, les récits, l’observation des objets, le symbolique, les rituels des fêtes… impliquent une confiance et une anticipation du déroulement d’une histoire qui jouent le rôle de guide anticipateur.]</h2>
+		<h3 style="color:#7184BF; margin-left:756px; margin-right:40vh">Conférence de Dieter Schürch ; Actes du symposium « Comment accompagner l’éducation préscolaire en milieu interculturel ? » ; 2021 ; p.15</h3>
+			
+			<ul class="activites" style="display: table; margin: 0 auto;margin-top:30px; margin-left:710px;">
+<h2>
+				<li style="color:#7184BF;">Bien-être familles<br> Massages parents-enfants<br><h6>https://www.bienetrefamille.org/<h6></li>
+					
+				</li>
+</h2>
+			</ul>
+
+</div>
+</div>
+	<button class="button2 button3" onclick="myFunc()" style="margin-left:160vh; font-size:0.7vw;  margin-top:30px;">↑</button>
+<div id="myDIV4">
+</h3>
+<div>
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:100px;">C.<h1> <h1 class="title" style="margin-top:-90px; margin-left:500px;">Des focus importants</h1>
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:70px;">I.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:500px;">Activités<br>langagiéres</h1>
+<div style="margin-left:40vh; margin-right:40vh; margin-top:50px;  ">
+		<h2 style="font-weight: 100;">
+			Une étude anglaise a identifié que, parmi tous les facteurs influençant le parcours scolaire, une lecture ou un récit à l’heure du coucher est celui qui a l’impact positif le plus important. 
+		</h2>	
+		
+		<div>
+			<ul>
+			<h2 style="font-weight: 100;">
+					<a href="#"><button class="butoni success" style="margin-left:650px; margin-top:0px;">En savoir plus</button></a>	
+				<li style="margin-top:0px;">Adriana Conterio <br> contes en musique </li> 
+					<a href="#"><button class="butoni success" style="margin-left:650px; ">En savoir plus</button></a>	
+				<br>
+				<li>Le tout doux <br> berceuses </li>
+					<a href="#"><button class="butoni success" style="margin-left:650px; ">En savoir plus</button></a>
+				<br>
+				<li>Tintamarre et gazouillis<br> récits en musique </li>
+					<a href="#"><button class="butoni success" style="margin-left:650px;">En savoir plus</button></a>
+				<br>
+				<li>Lectures plurilingues<br> lectures en plusieurs langues </li>
+					<a href="#"><button class="butoni success" style="margin-left:650px;">En savoir plus</button></a>
+				<br>
+				<li>Nid d’anges	<br>marionnettes en musique</li>
+					<a href="#"><button class="butoni success" style="margin-left:650px;">En savoir plus</button></a>
+				<br>
+				<li>Bibliothèques de Carouge </li>	
+					
+				<br>
+			</h2>
+			</ul>
+		</div>
+		
+</div>
+</div>
+	<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+	Le langage se développe chez l’enfant dès qu’il est capable de percevoir des sons dans le ventre de sa maman.
+ <br><br>
+Son cerveau est en constante mutation pendant la petite enfance, se rendant particulièrement disponible pour les apprentissages importants de cette période. Ces capacités cognitives exceptionnelles se perdent ensuite peu à peu.
+ <br><br>
+Dès la naissance, l’enfant pleure avec les intonations de la langue (des langues) qu’il y perçue pendant la grossesse. Il est à l’écoute de tous les sons et emmagasine tout le langage qui lui est proposé lorsqu’il y est attentif. C’est en interaction avec ses parents et ses proches que le tout jeune enfant est stimulé à écouter et à apprendre. Il commence par comprendre beaucoup et à le manifester aux gens qui l’écoutent par des gestes, des mimiques et des sons qui sont son protolangage.
+ <br><br>
+Dès qu’il le peut et qu’il est stimulé par son entourage, il s’entraine à parler à ses interlocuteurs et devient petit à petit à même de produire des mots puis des phrases qui gagnent en justesse et en compréhension au fil des mois.
+ <br><br>
+A peu près à l’âge de son entrée à l’école, l’enfant possède, par rapport à ses camarades, ce qu’on pourrait déjà appeler un « niveau de langue » qui correspond aux expositions langagières actives et interactives depuis sa naissance. C’est le socle sur lequel il va pouvoir poser la suite de ses apprentissages langagiers.
+ <br><br>
+Toutes les langues premières se valent. Ce qui est par contre primordial, c’est que la langue parlée et les incursions dans la langue du récit soient riches et diversifiées dans la tessiture lexicale proposée et qu’elles soient grammaticalement correctes.
+ <br><br>
+A l’âge de son entrée à l’école, l’enfant est capable d’apprendre très vite le français lorsque la langue dite maternelle est bien posée. Mais ses premiers pas scolaires se passeront mieux s’il a pu bénéficier d’un bain de langue française préalable (jardin d’enfants, copains de quartier, etc.).
+ <br><br>
+Il est préférable que les parents s’expriment dans la langue qu’ils parlent le mieux à la maison et procurent à leurs enfants la possibilité d’interactions en français à l’extérieur.
+ <br><br>
+Les enfants dont les parents parlent une autre langue première que le français à la maison vont devenir plurilingues (minimalement bilingues). Les recherches le montrent aujourd’hui, cela a des avantages car le fait de devoir choisir une langue en fonction de son interlocuteur induit des capacités d’empathie et de discrimination (choix) qui vont faciliter les relations humaines ainsi que les apprentissages scolaires. Des études récentes ont également mis en évidence que même les enfants souffrant de troubles du langage s’en sortent mieux lorsqu’ils développent plusieurs langues en parallèle.
+ <br><br>
+[La lecture et le récit d’histoires exposent l’enfant à de nouveaux concepts avec un vocabulaire plus riche, des structures de phrases plus élaborées que dans la vie quotidienne. Ce sont donc des activités très efficaces pour enrichir le langage44, dont les effets durent longtemps puisque dans l’étude internationale PISA 2012, il existe un écart de plus de 20 points dans les scores de compréhension chez les adolescents de 15 ans dont les parents leur lisaient et racontaient des histoires dans la petite enfance par rapport à ceux pour qui ce n’étaient pas le cas. L’exposition précoce aux livres et aux histoires a donc un rôle positif régulièrement relevé dans les études.]
+	<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh;">
+Rapport de la commission des 1000 premiers jours; Ministère des solidarités et de la santé ; septembre 2020 ; p. 24</h3>
+</h2>
+
+	<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:50px;">II.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:450px;">Eveil au mouvement <br>et à la musique</h1>
+		<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+			[Des «espaces temps» qui concourent au soutien du développement global des jeunes enfants et des relations humaines. ]
+		</h2>
+	<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh; margin-top:40px;">
+	Anne-Françoise Wittgenstein, Actes du symposium 2021, p.68</h3>
+<br>
+	<p class="title3"> Découvertes </p>
+
+<ul style="margin-right:600px; margin-left:600px; margin-top:-160px; font-weight: 100;">
+
+<br>
+<br>
+
+	<h2 style="font-weight: 100; ">
+		<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li>Espcace-Liens<br>Découvertes en mouvement</li>
+		<br>
+		<li> Joue à ton rythme <br>  découvertes de sonorités <br> d’instruments <br> Andeas Fulgosi</li>
+		<br>
+		<li>Fiorella<br> découverte de la danse <br> par une éducatrice du jeune <br> enfant</li>
+		<br>
+		<li>Le bruit <br>découvertes des sons </li>
+		<br>
+	</h2>
+</ul>
+
+
+<p class="title3"> Spectacles </p>
+
+<ul style="margin-right:600px; margin-left:600px; margin-top:-160px;">
+
+<br>
+<br>
+
+	<h2 style="font-weight: 100; ">
+			<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li>Kassoum Coulibaly  <br>  concert</li>
+		<br>
+			<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li> Adriana Conterio	 <br>  contes en musique 	</li>
+		<br>
+			<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li>Le tout doux <br>	berceuses</li>
+		<br>
+			<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li>Tintamarre et gazouillis  <br> récits en musique  </li>
+		<br>
+			<a href="#"><button class="butoni success" style="margin-top:-50px; margin-right:-100px; margin-left:600px;">En savoir plus</button></a>
+		<li>Nid d’anges	<br> marionnettes en musique</li>
+		<br>
+	</h2>
+</ul>
+		<h2 style="margin-left:356px; margin-left:40vh; margin-right:40vh; font-weight: 100;">
+			[Si la musique et la psychomotricité recouvrent des pratiques différentes, elles se rejoignent en ce qu’elles sont des médiations qui mettent en jeu le corps, le rythme, les émotions et la relation à l’autre par les outils sur lesquels elles se fondent.
+<br>
+<br>
+			Celles-ci vont favoriser notamment des prérequis aux apprentissages de vie et aux relations dans une perspective de renforcement du sentiment d’appartenance, par exemple par un travail d’appropriation du corps et des émotions, d’élargissement des capacités à explorer et jouer, de compétences communicationnelles et d’interaction par le biais de modalités d’échange non verbal et verbal, ou encore de socialisation et de transition vers l’école et un travail des compétences parentales.
+<br>
+<br>
+			Engageant la participation de chaque personne par la mobilisation corporelle et ludique, en musique et/ou par la psychomotricité, (…) les prestataires contribuent à des enjeux de santé, d’inclusion et d’égalité des potentialités.]
+		</h2>
+			<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh; margin-top:10px;">
+				Psychomotricité et musique : enjeux, actes du symposium 2021, p.68
+			</h3>
+<br>
+<br>
+			<h1 style="color:yellow; margin-left:40vh; margin-right:40vh; font-size: xxx-large; margin-top:10px;">III.<h1> <h1 class="title2" style="margin-top:-90px; margin-left:500px;">Eveil à la créativité</h1>
+
+				<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+				[La créativité construit positivement notre rapport au monde. En créant, l’enfant exerce sa liberté, développe ses propres idées, prend confiance, se construit lui-même. En créant avec d’autres, il coopère, est solidaire. 
+<br>
+<br>
+Accueillir la créativité des enfants c’est contribuer à l’émergence d’adultes épanouis, libres et responsables.]
+
+	<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh; margin-top:10px;">
+				site internet de la Maison de la Créativité
+	</h3>
+<br>
+<br>
+			<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+				[Le chemin commence dans la tête […]. Tant que nous, adultes, n’aurons pas compris quels sont les besoins élémentaires des tout-petits, nous ne pourrons pas les laisser en liberté. Nous trouverons toujours d’excellentes raisons pour les empêcher d’accéder aux sources [de leur créativité].]
+			</h2>
+<br>
+<br>
+	<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh; margin-top:10px;">
+				Renz-Polster/Hüther 2013, p. 196 et s.
+	</h3>
+
+
+		<div>
+			<ul style="margin-left:40vh; margin-right:40vh;">
+			<h2 style="font-weight: 100;">
+					<a href="#"><button class="butoni success" style="margin-left:650px; margin-top:0px;">En savoir plus</button></a>	
+				<li style="margin-top:0px;">La boîte à trucs <br> Jeux et imaginaire à partir de <br>trésors insolites </li> 
+					<a href="#"><button class="butoni success" style="margin-left:650px; ">En savoir plus</button></a>	
+				<br>
+				<li>RécréCréa <br> Espace créatif avec matériel recyclé </li>
+					<a href="#"><button class="butoni success" style="margin-left:650px; ">En savoir plus</button></a>
+				<br>
+				<li>Superpapier<br> création et exploration à partir de<br>papiers et cartons </li>
+					<a href="#"><button class="butoni success" style="margin-left:650px;">En savoir plus</button></a>
+				<br>
+				<li>Dimitri Tasef<br> Spectacle ludique et interactif </li>
+					
+				<br>
+				<br>
+			</h2>
+			</ul>
+		</div>
+	<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+		Le processus créatif est plus important que le résultat : 
+ <br>
+ <br>
+		[Jusqu’ à quatre ans, l’enfant est moins intéressé par le produit qui résulte de son intention que par les connaissances et les expériences qu’il acquiert en manipulant un matériau, un objet ou une situation. Le savoir qu’il se constitue et les compétences qu’il développe en s’appropriant le monde sont un conglomérat d’impressions sensorielles et d’expériences complexes. Les émotions jouent un rôle-clé « car l’enregistrement des connaissances dans le cerveau nécessite l’activation des centres émotionnels du cerveau moyen, sans quoi elles sombrent immédiatement dans l’oubli ».] 
+	</h2>
+		<h3 style="color:#7184BF;margin-left:40vh; margin-right:40vh; margin-top:10px;">
+			Hüther 2013, p. 26.
+		</h3>
+	<h2 style="margin-left:40vh; margin-right:40vh; font-weight: 100;">
+	[Dans le travail pédagogique portant sur l’art et la culture, il s’agit … d’abord d’encourager la créativité des personnes en charge de l’éducation de l’enfant. Il est important d’en avoir conscience lorsqu’on démarre un projet créatif ou artistique. Si l’objectif est le processus créatif individuel, les compétences et habiletés qu’il permet de développer, les connaissances qui en découlent et les états émotionnels (notamment la réussite) que l’enfant expérimente à travers lui, on ne peut pas se contenter, méthodologiquement parlant, de lui dire : « Allez, on va tous bricoler, peindre et dessiner quelque chose ». Il faut en faire beaucoup plus, en mettant en place un environnement d’apprentissage stimulant, dans lequel les enfants pourront se frotter aux matériaux, objets et thématiques qui les intéressent en fonction de leur stade de développement. Ils apprendront à s’exprimer et à trouver des solutions à leurs problèmes par les arts plastiques, le théâtre, la musique ou le langage. « Lorsqu’on renonce à définir la tâche à accomplir et le résultat à obtenir, à planifier une marche à suivre jusque dans ses moindres détails et à préparer les outils et les matériaux nécessaires pour que tous les enfants suivent la même procédure, il n’en résulte pas moins de travail, bien au contraire. »]
+	</h2>
+		<h3 style="color:#7184BF; margin-left:40vh; margin-right:40vh; margin-top:10px;">
+			Brochure « Eveil esthétique et participation culturelle dès le plus jeune âge ; réseau suisse extra-familial ; 2020 ; p.35
+		</h3>
+</div>
+</div>
+</span>
+</span>
+ <img class="image1" src="footer2.png" style="margin-left:-18px; margin-right:1px; margin-top:100px; margin-bottom:-60px;" />
+
+
+
+
+<script>
+function myFunc() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFun() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+   
+
+
+function myFu() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+   
+
+   
+function myF() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+
+
+function showhide() {
+  var div = document.getElementById("newpost");
+  div.classList.toggle('hidden'); 
+}
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "↓"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "↑"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+function showhide() {
+  var div = document.getElementById("newpost");
+  div.classList.toggle('hidden'); 
+}
+
+
+
+
+  var dots = event.target.previousElementSibling.querySelector(".dots");
+  var moreText = event.target.previousElementSibling.querySelector(".more");
+  var btnText = event.target;
+  
+  
+ 
+
+
+</script>
+
+</body>
+</html>
